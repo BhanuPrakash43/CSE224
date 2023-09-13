@@ -1,0 +1,335 @@
+1.
+Question 1
+Which among the following actions can start navigation? Select all that apply.
+
+
+
+Clicking a tab item
+
+
+Clicking a button
+
+
+Selecting an item from the list
+
+
+2.
+Question 2
+Bottom Navigation only navigates to a new destination without showing the status of the active item.
+
+True
+
+
+False
+
+
+3.
+Question 3
+ Select all that apply. The fixed start navigation principle states that:     
+
+
+
+The application always ends with the same starting screen while leaving the app.
+
+
+
+The application always starts from the same first screen. 
+
+
+
+ The application always starts from the same screen but ends with a different screen.   
+
+
+4.
+Question 4
+The Stack works on which one of the following principles?
+
+
+Last in First out
+
+
+Last in Last out
+
+
+First in First out
+
+
+First in Last out
+
+
+5.
+Question 5
+Select all that apply. 
+
+The purpose of NavHost is to:               
+
+
+
+act as a container for displaying the current destination.
+
+
+
+take the NavController as a parameter and associate it with the NavGraph.
+
+
+manage the Back Stack.
+
+**************************************************************************************************************************************************************************
+
+1.
+Question 1
+Which among the following can be used to place its children horizontally?
+
+
+Row
+
+
+Column
+
+2.
+Question 2
+ Which one of the following arrangements adds space to the first and last child on the list while keeping other items in the center?    
+
+
+Space between
+
+
+Space Evenly
+
+
+Space around
+
+
+3.
+Question 3
+ Which of the following arrangements can be used with a Column?    
+
+
+
+Horizontal Arrangement
+
+
+Both Vertical and Horizontal Arrangements
+
+
+Vertical Arrangement
+
+
+4.
+Question 4
+ Scrolling is available to a Row and a Column without adding any modifier.    
+
+
+
+True
+
+
+False
+
+
+5.
+Question 5
+ For creating a Grid of a small number of elements, a combination of Row and Column composable can be used.    
+
+
+True
+
+
+False
+
+***************************************************************************************************************************************************************************************************
+
+1.
+Question 1
+What is the back stack used for in Android?
+
+
+ generating routes
+
+
+
+forward navigation
+
+
+
+ database queries
+
+
+
+ backward navigation
+
+
+2.
+Question 2
+Which of the following must each NavHost be associated with?
+
+
+ A single NavController.
+
+
+
+A destination.
+
+
+
+ A route.
+
+
+
+The NavGraph.
+
+
+3.
+Question 3
+Which of the following is the correct way to create a destination object for a Profile screen that implements the below Destinations interface?
+
+
+interface Destinations{
+ val route:String
+}
+
+
+object Profile:Destinations{
+    override val route = “Profile”
+ }
+
+
+Profile:Destinations{
+    override val route = “Profile”
+ }
+
+
+ object Profile{
+    override val route = “Profile”
+ }
+
+
+ object Destinations{
+    override val route = “Profile”
+ }
+
+
+
+4.
+Question 4
+Which of the following is the default argument type for the navArgument() function?
+
+
+Int
+
+
+
+String
+
+
+
+Boolean
+
+
+5.
+Question 5
+In Jetpack Compose Navigation, the __________ function is used for constructing a new argument.
+
+
+argument()
+
+
+
+navArgument()
+
+
+
+argumentNav()
+
+
+6.
+Question 6
+What is each bottom navigation element called?
+
+
+ bottomNavigationItem
+
+
+
+ navigationItem
+
+
+
+ bottomNavItem
+
+
+7.
+Question 7
+Which of the following is used for a vertical list of an unknown number of items?
+
+
+ Column
+
+
+
+ LazyRow
+
+
+
+ LazyColumn
+
+
+8.
+Question 8
+What is the most suitable element when you have an unknown or large number of items? Select all that apply. 
+
+
+LazyRow
+
+
+
+Column
+
+
+
+Row 
+
+
+
+LazyColumn
+
+
+9.
+Question 9
+Imagine you have defined the destination below and you want to use the variable argProductNumber in the NavHost.
+
+
+  object Product : Destinations {
+       const val argProductNumber = "ProductNumber"
+       override val route = "Product"
+  }
+Which of the following is the correct way to append the argProductNumber to the Product route within the NavHost?
+
+
+
+ Product.route + “/{$Product.argProductNumber}
+
+
+
+ Product.route + “/{$argProductNumber}
+
+
+
+ Product/{ProductNumber}
+
+
+10.
+Question 10
+Which of the following best describes a NavController?
+
+
+
+ NavController is responsible for navigating between destinations.
+
+
+
+ NavController acts as a container for displaying the current destination.
+
+
+
+NavController is a collection of navigable destinations.
